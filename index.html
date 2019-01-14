@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Grade Calculator</title>
+    <script src="finalgradecalc.js"></script>
+</head>
+<body>
+    <p>Final Grade: <span id="showGrade">Click Calculate.</span></p>
+    <p>Final Quality Point Calculation: <span id="showQualPoints">0.0</span></p>
+    <p>Fail Count: <span id="fails">0</span></p>
+ <form id="gradeCalculator">
+    <label>MP1</label>
+     <select id="gradeCalc-mp1" name="MP1">
+         <option>A</option>
+         <option>B</option>
+         <option>C</option>
+         <option>D</option>
+         <option>F</option>
+     </select>
+     <label>MP2</label>
+     <select id="gradeCalc-mp2" name="MP2">
+         <option>A</option>
+         <option>B</option>
+         <option>C</option>
+         <option>D</option>
+         <option>F</option>
+     </select>
+     <label>MP3</label>
+     <select id="gradeCalc-mp3" name="MP3">
+         <option>A</option>
+         <option>B</option>
+         <option>C</option>
+         <option>D</option>
+         <option>F</option>
+     </select>
+     <label>MP4</label>
+     <select id="gradeCalc-mp4" name="MP4">
+         <option>A</option>
+         <option>B</option>
+         <option>C</option>
+         <option>D</option>
+         <option>F</option>
+     </select>
+     <label>Midterm</label>
+     <select id="gradeCalc-mid" name="Midterm">
+         <option>A</option>
+         <option>B</option>
+         <option>C</option>
+         <option>D</option>
+         <option>F</option>
+         <option>No Midterm</option>
+     </select>
+     <label>Final</label>
+     <select id="gradeCalc-fin" name="Final">
+         <option>A</option>
+         <option>B</option>
+         <option>C</option>
+         <option>D</option>
+         <option>F</option>
+         <option>No Final</option>
+     </select>
+     <button type="reset" onclick="resetValue()">Reset</button>
+     <button type="button" onclick="calcFinalGrade()">Calculate</button>
+ </form>
+</body>
+</html>
